@@ -1,0 +1,29 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  background: $refills-body-background-color;
+  min-width: 320px;
+}
+
+@mixin refills-inset {
+  background: darken($refills-hero-background, 2%);
+  border: 1px solid darken($refills-hero-background, 7);
+  box-shadow: $refills-white-shadow;
+  text-shadow: $refills-white-shadow;
+}
+
+.menu-wrapper {
+  @include clearfix;
+}
+
+#example {
+  background: $refills-body-background-color;
+  display: inline-block;
+  padding-top: 1em;
+  position: relative;
+  width: 100%;
+
+  @include media($refills-large-screen) {
+    padding-top: 3em;    
+  }
+}

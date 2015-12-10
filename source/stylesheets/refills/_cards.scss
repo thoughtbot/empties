@@ -1,0 +1,21 @@
+.cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+
+  .card {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+    margin: 0 1em;
+  }
+  
+  .card-image {
+    height: 15em;
+    background: whitesmoke;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}

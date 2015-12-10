@@ -1,0 +1,32 @@
+.login {
+  .login-logo {
+    display: block;
+    margin: auto;
+    height: 3em;
+  }
+
+  label {
+    float: left;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .forgot-password {
+    float: right;
+  }
+
+  .login-button {
+    float: left;
+  }
+
+  .remember-me {
+    float: right;
+  }
+
+  input[type="checkbox"] {
+    display: inline;
+  }
+}
+

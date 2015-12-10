@@ -1,0 +1,32 @@
+.login-stacked {
+  .login-logo {
+    display: block;
+    margin: 0 auto 2em;
+    height: 3em;
+  }
+
+  label {
+    float: left;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .forgot-password {
+    float: right;
+  }
+
+  .login-button {
+    width: 100%;
+  }
+
+  .remember-me {
+    float: left;
+  }
+
+  input[type="checkbox"] {
+    display: inline;
+  }
+}
+
