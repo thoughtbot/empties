@@ -1,6 +1,6 @@
 .modal {
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
+  $medium-screen: 30em !default;
+  $large-screen: 50em !default;
 
   label {
     cursor: pointer;

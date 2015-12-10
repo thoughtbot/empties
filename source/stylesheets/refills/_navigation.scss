@@ -1,6 +1,6 @@
 .navigation {
-  $large-screen: em(860) !default;
-  $medium-screen: em(460) !default;
+  $large-screen: 50em !default;
+  $medium-screen: 30em !default;
 
   // Mobile view
   .navigation-menu-button {

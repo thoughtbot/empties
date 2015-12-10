@@ -1,17 +1,18 @@
 .hero {
-  $large-screen: em(860) !default;
+  $large-screen: 50em !default;
   align-items: center;
   background: image_url("background-image.png");
   background-position: right;
   background-size: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   min-height: 25em;
   padding: 2em;
 
   @include media($large-screen) {
     background-size: cover;
     background-position: left;
+    justify-content: flex-end;
   }
 
   .hero-content {
