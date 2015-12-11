@@ -2,28 +2,28 @@
 @import url(vendor/normalize.css);
 @import url(vendor/fixedsticky.css);
 @import url(vendor/prism.css);
-/* line 4, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 4, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
-/* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/_refills-styles.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-styles.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
   background: #fff;
   min-width: 320px; }
 
-/* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+/* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
 .menu-wrapper::after {
   clear: both;
   content: "";
   display: table; }
 
-/* line 19, /Users/magnus/Documents/Empties/source/stylesheets/_refills-styles.scss */
+/* line 19, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-styles.scss */
 #example {
   background: #fff;
   display: inline-block;
@@ -31,163 +31,158 @@ body {
   position: relative;
   width: 100%; }
   @media screen and (min-width: 53.75em) {
-    /* line 19, /Users/magnus/Documents/Empties/source/stylesheets/_refills-styles.scss */
+    /* line 19, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-styles.scss */
     #example {
       padding-top: 3em; } }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
 .refills-header {
-  background-color: #F1F1F1;
+  background-color: #F8F8F8;
   clear: both;
   margin-bottom: 1em;
-  padding: 5em 0 8em;
+  padding: 5em 0;
   text-align: center;
   width: 100%; }
-  /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
   .refills-header::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (min-width: 40em) {
-    /* line 1, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+    /* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
     .refills-header {
       margin-bottom: 4em;
-      padding: 6em 0 10em; } }
+      padding: 6em 0; } }
   @media screen and (min-width: 53.75em) {
-    /* line 1, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+    /* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
     .refills-header {
-      border-bottom: 2px solid #e4e4e4;
+      border-bottom: 2px solid #ebebeb;
       margin-bottom: 4em;
-      padding: 6em 0 11em 0; } }
-  /* line 21, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+      padding: 6em 0; } }
+  /* line 21, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
   .refills-header .refills-logo {
     display: inline-block;
     margin: 0 auto 1.4em auto; }
-    @media screen and (min-width: 40em) {
-      /* line 21, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
-      .refills-header .refills-logo {
-        max-height: 8em;
-        max-width: 8em; } }
-    /* line 30, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
-    .refills-header .refills-logo img {
-      background: #fff;
-      margin-bottom: 1em;
-      max-height: 5em;
-      max-width: 5em;
+    /* line 25, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
+    .refills-header .refills-logo svg {
+      height: 80px;
+      width: 80px;
+      background: #776FAA;
+      border-radius: 50%;
+      fill: white;
       padding: 0.3em; }
       @media screen and (min-width: 40em) {
-        /* line 30, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
-        .refills-header .refills-logo img {
-          margin-bottom: 2em;
-          max-height: 8em;
-          max-width: 8em;
+        /* line 25, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
+        .refills-header .refills-logo svg {
+          height: 120px;
+          width: 120px;
           padding: 0.5em; } }
-  /* line 46, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+  /* line 39, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
   .refills-header h2 {
-    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 1.4em;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.4em;
     margin: 0 auto 2em auto;
     max-width: 80%;
     text-align: center; }
     @media screen and (min-width: 40em) {
-      /* line 46, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+      /* line 39, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
       .refills-header h2 {
         font-size: 2em;
         margin-bottom: 1em;
         max-width: 80%; } }
     @media screen and (min-width: 53.75em) {
-      /* line 46, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+      /* line 39, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
       .refills-header h2 {
         font-size: 3em;
         line-height: 1.3em;
         margin-bottom: 0.8em;
         max-width: 45%; } }
-  /* line 69, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+  /* line 62, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
   .refills-header h3 {
     font-size: 1.3em;
     font-weight: 200;
     margin-bottom: 1em;
     text-align: center; }
-  /* line 76, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+  /* line 69, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
   .refills-header a {
-    color: #f55481;
+    color: #776FAA;
     text-decoration: none; }
-    /* line 80, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+    /* line 73, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
     .refills-header a:focus, .refills-header a:hover {
-      color: #f884a5; }
-  /* line 86, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+      color: #534c81; }
+  /* line 79, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
   .refills-header p {
-    background: #ececec;
-    border: 1px solid #dfdfdf;
+    background: #f3f3f3;
+    border: 1px solid #e6e6e6;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
     border-radius: 30px;
-    color: #87a898;
+    color: #999;
     display: inline;
     font-family: "Oswald", sans-serif;
     font-size: 0.8em;
     font-weight: 400;
     padding: 0.5em 1.4em; }
     @media screen and (min-width: 53.75em) {
-      /* line 86, /Users/magnus/Documents/Empties/source/stylesheets/_refills-header.scss */
+      /* line 79, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-header.scss */
       .refills-header p {
         font-size: 0.8em; } }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 section.refill {
   margin-bottom: 2em;
   padding-bottom: 1em;
   position: relative; }
-  /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
   section.refill::after {
     clear: both;
     content: "";
     display: table; }
-  /* line 7, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   section.refill > h3 {
     margin-bottom: 1.3em;
     margin-top: 1em;
     padding-top: 0.5em; }
 
-/* line 14, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 14, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .refills-wrapper {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 1em; }
-  /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
   .refills-wrapper::after {
     clear: both;
     content: "";
     display: table; }
-  /* line 18, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 18, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refills-wrapper h1.main-header {
     background-color: #82caca;
     display: inline-block;
     padding: 0.5em; }
 
-/* line 25, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 25, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .refill-centering {
   text-align: center; }
-  /* line 28, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refill-centering > * {
     display: inline-block; }
-    /* line 31, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+    /* line 31, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
     .refill-centering > * > * {
       text-align: left; }
-  /* line 36, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 36, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refill-centering script {
     display: none; }
 
-/* line 41, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 41, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .line-behind-text {
   border-bottom: 1px solid #cacaca;
   text-align: center;
   margin-bottom: 4.5em; }
 
-/* line 47, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 47, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .line-behind-text h6 {
   background: #fff;
   color: #808080;
@@ -200,11 +195,11 @@ section.refill {
   text-transform: uppercase;
   top: 34px; }
 
-/* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .refill h6 {
   margin-bottom: 1.5em; }
 
-/* line 64, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 64, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .js-hide-code,
 .js-show-code {
   border-top: 1px dashed #bebcbc;
@@ -212,101 +207,101 @@ section.refill {
   font-size: 0.8em;
   text-transform: uppercase;
   width: 9em; }
-  /* line 72, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 72, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .js-hide-code:hover,
   .js-show-code:hover {
     color: #477dca; }
 
-/* line 77, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 77, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .js-show-code {
   display: inline-block;
   padding: 0.5em 1em; }
 
-/* line 82, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 82, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .js-hide-code {
   display: none;
   padding: 0.5em 1em; }
 
-/* line 88, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 88, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .refill-control {
   display: block;
   margin-bottom: 2em;
   text-align: center;
   width: 100%; }
-  /* line 94, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 94, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refill-control a {
     line-height: 1.5em;
     text-decoration: none; }
 
-/* line 101, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 101, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .refill-snippet {
   margin-top: 4.5em;
   padding: 0 1em; }
-  /* line 105, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 105, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refill-snippet table {
     border-collapse: collapse;
     margin: 0.75em 0;
     table-layout: fixed;
     width: 100%; }
-  /* line 112, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 112, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refill-snippet th {
     font-weight: bold;
     padding: 0.75em 0;
     text-align: left; }
-  /* line 118, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 118, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refill-snippet td {
     padding: 0.75em 0; }
-  /* line 122, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 122, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .refill-snippet tr,
   .refill-snippet td,
   .refill-snippet th {
     vertical-align: middle; }
 
-/* line 129, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 129, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 pre[class*="language-"] {
   background-color: #f8f8f8;
   border-top: 2px solid silver;
   height: 300px;
   line-height: 1em; }
 
-/* line 136, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 136, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippets-table {
   display: none; }
-  /* line 139, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 139, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .snippets-table td {
     border-bottom: 0; }
-  /* line 143, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 143, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .snippets-table .snippet:nth-child(4n) {
     display: none; }
 
 @media screen and (min-width: 40em) {
-  /* line 148, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 148, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .snippet {
     margin-bottom: 2em; } }
-/* line 153, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 153, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet .copy-source-container {
   min-height: 3.4em; }
   @media screen and (min-width: 40em) {
-    /* line 153, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+    /* line 153, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
     .snippet .copy-source-container {
       min-height: 2.5em; } }
   @media screen and (min-width: 53.75em) {
-    /* line 153, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+    /* line 153, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
     .snippet .copy-source-container {
       min-height: 1em; } }
-/* line 165, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 165, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet:nth-of-type(1) .copy-source {
   background: #e98065; }
-/* line 169, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 169, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet:nth-of-type(2) .copy-source {
   background: #55a1d4; }
-/* line 173, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 173, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet:nth-of-type(3) .copy-source:nth-of-type(1) {
   background: #e9c05b; }
-/* line 177, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 177, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet:nth-of-type(3) .copy-source:nth-of-type(2) {
   background: #89b981; }
-/* line 181, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 181, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet .copy-source {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 0;
@@ -318,58 +313,58 @@ pre[class*="language-"] {
   font-weight: 800;
   padding: 0.4em 1em;
   text-transform: uppercase; }
-  /* line 193, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+  /* line 193, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
   .snippet .copy-source:hover, .snippet .copy-source:active {
     background-color: #666666;
     color: #fff; }
-/* line 200, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 200, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet a {
   text-decoration: none; }
-/* line 204, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 204, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .snippet code {
   font-size: 0.6em;
   line-height: 1.4em;
   max-height: 25em;
   overflow: scroll; }
 
-/* line 212, /Users/magnus/Documents/Empties/source/stylesheets/_refill.scss */
+/* line 212, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refill.scss */
 .refill-smaller {
   margin: auto;
   width: 70%; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
 footer.refills-footer {
   color: silver;
   padding-bottom: 2em;
   padding-top: 1em;
   text-align: center; }
-  /* line 7, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+  /* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
   footer.refills-footer a {
     color: #f55481;
     text-decoration: none; }
-  /* line 12, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+  /* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
   footer.refills-footer p {
     font-size: 0.8em;
     line-height: 1.5em;
     margin: 0 1em; }
     @media screen and (min-width: 53.75em) {
-      /* line 12, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+      /* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
       footer.refills-footer p {
         font-size: 1em; } }
-  /* line 22, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+  /* line 22, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
   footer.refills-footer .refills-footer-logo {
     margin-bottom: 2em; }
-  /* line 26, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+  /* line 26, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
   footer.refills-footer img {
     display: block;
     height: 60px;
     margin: auto; }
-    /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+    /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
     footer.refills-footer img::after {
       clear: both;
       content: "";
       display: table; }
-  /* line 33, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+  /* line 33, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
   footer.refills-footer .footer-links {
     border-top: 2px solid;
     display: inline-block;
@@ -380,51 +375,51 @@ footer.refills-footer {
     padding: 0.6em;
     text-transform: uppercase; }
     @media screen and (min-width: 53.75em) {
-      /* line 33, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+      /* line 33, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
       footer.refills-footer .footer-links {
         font-size: 1em;
         padding: 1em; } }
-    /* line 48, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+    /* line 48, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
     footer.refills-footer .footer-links li {
       display: inline;
       padding: 0.4em; }
-      /* line 52, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+      /* line 52, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
       footer.refills-footer .footer-links li a {
         color: #a7a7a7;
         text-decoration: none; }
-        /* line 56, /Users/magnus/Documents/Empties/source/stylesheets/_refills-footer.scss */
+        /* line 56, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-footer.scss */
         footer.refills-footer .footer-links li a:hover {
           color: #f55481; }
 
-/* line 3, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+/* line 3, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
 nav.bourbon {
   background-color: #5b5e63;
   padding: 0 2em 0 1em;
   text-rendering: optimizeLegibility; }
-  /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
   nav.bourbon::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 31.875em) {
-    /* line 3, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 3, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon {
       padding: 0; } }
-  /* line 13, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+  /* line 13, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
   nav.bourbon ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center; }
     @media screen and (min-width: 56.3125em) {
-      /* line 13, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+      /* line 13, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
       nav.bourbon ul {
         float: left;
         text-align: left; } }
-  /* line 25, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+  /* line 25, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
   nav.bourbon li {
     display: inline-block; }
-  /* line 29, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+  /* line 29, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
   nav.bourbon a {
     background-position: 1em center;
     background-repeat: no-repeat;
@@ -434,128 +429,132 @@ nav.bourbon {
     padding: 1em 1em 1em 3em;
     text-decoration: none; }
     @media screen and (max-width: 32.1875em) {
-      /* line 29, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+      /* line 29, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
       nav.bourbon a {
         padding: 0.75em 0.5em;
         text-align: center; } }
     @media screen and (max-width: 56.25em) {
-      /* line 29, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+      /* line 29, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
       nav.bourbon a {
         display: block; } }
-    /* line 47, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 47, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon a:focus, nav.bourbon a:hover {
       background-color: #434548;
       color: #fff; }
-    /* line 53, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 53, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon a.current {
       background-color: #4f5156; }
-    /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon a.bourbon {
       background-image: url("/images/bourbon-nav/bourbon.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.bourbon {
           background-image: url("/images/bourbon-nav/bourbon@2x.png");
           background-size: 20%; } }
       @media screen and (max-width: 32.1875em) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.bourbon {
           background-image: none; } }
-    /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon a.neat {
       background-image: url("/images/bourbon-nav/neat.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.neat {
           background-image: url("/images/bourbon-nav/neat@2x.png");
           background-size: 20%; } }
       @media screen and (max-width: 32.1875em) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.neat {
           background-image: none; } }
-    /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon a.bitters {
       background-image: url("/images/bourbon-nav/bitters.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.bitters {
           background-image: url("/images/bourbon-nav/bitters@2x.png");
           background-size: 20%; } }
       @media screen and (max-width: 32.1875em) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.bitters {
           background-image: none; } }
-    /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon a.refills {
       background-image: url("/images/bourbon-nav/refills.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.refills {
           background-image: url("/images/bourbon-nav/refills@2x.png");
           background-size: 20%; } }
       @media screen and (max-width: 32.1875em) {
-        /* line 60, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+        /* line 60, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
         nav.bourbon a.refills {
           background-image: none; } }
-  /* line 75, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+  /* line 75, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
   nav.bourbon h1 {
     color: rgba(255, 255, 255, 0.6);
     float: right;
     font-size: 1em;
     margin: 0; }
     @media screen and (max-width: 56.25em) {
-      /* line 75, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+      /* line 75, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
       nav.bourbon h1 {
         display: none; } }
-    /* line 85, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+    /* line 85, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
     nav.bourbon h1 a {
       padding: 1em 0;
       text-decoration: none; }
-      /* line 89, /Users/magnus/Documents/Empties/source/stylesheets/_bourbon-nav.scss */
+      /* line 89, /Users/brendastorer/Workspaces/empties/source/stylesheets/_bourbon-nav.scss */
       nav.bourbon h1 a:hover {
         background-color: transparent; }
 
-/* line 3, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+/* line 3, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
 section.inner-content {
   margin-left: auto; }
 
-/* line 7, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+/* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
 .refills-menu-anchor {
   position: fixed;
   top: 4.5em;
   left: 1em;
   height: 50px;
   width: 50px;
-  border: 1px solid #87a898;
+  border: 1px solid #776FAA;
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
-  font-size: 1em;
-  padding: 0.7em 1em;
+  fill: #776FAA;
   margin-bottom: 1.5em;
+  padding: 1em;
+  text-align: center;
   transition: all 0.2s ease-in-out;
   z-index: 9999; }
-  /* line 20, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 21, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
+  .refills-menu-anchor:hover {
+    border-color: #534c81;
+    fill: #534c81; }
+  /* line 26, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
+  .refills-menu-anchor svg {
+    height: 14px;
+    width: 14px; }
+  /* line 30, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .refills-menu-anchor.fixedsticky-on {
     margin-top: 0; }
-  /* line 24, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 34, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .refills-menu-anchor.fixedsticky-off {
     position: fixed; }
-  /* line 28, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
-  .refills-menu-anchor img {
-    height: 26px;
-    width: 30px;
-    max-width: 100%; }
 
-/* line 34, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+/* line 39, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
 .refills-menu-anchor-moved {
   top: 1em; }
 
-/* line 38, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+/* line 43, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
 .fixedsticky-dummy {
   height: 0 !important; }
 
-/* line 42, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+/* line 47, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
 .refills-menu-screen {
   position: fixed;
   top: 0;
@@ -569,17 +568,17 @@ section.inner-content {
   opacity: 0;
   visibility: hidden;
   z-index: 999998; }
-  /* line 50, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 55, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .refills-menu-screen.is-visible {
     opacity: 0;
     visibility: visible; }
 
-/* line 56, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+/* line 61, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
 .er_toc_title,
 .er_toc_top {
   display: none; }
 
-/* line 61, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+/* line 66, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
 .er_toc {
   position: fixed;
   top: 0;
@@ -602,30 +601,30 @@ section.inner-content {
   -webkit-overflow-scrolling: touch;
   transition: all 0.2s linear;
   z-index: 999999; }
-  /* line 74, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 79, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .er_toc ul {
     margin: 0;
     padding: 1em; }
-  /* line 80, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 85, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .er_toc ul li a {
     color: #d9d9d9;
     font-size: 1em;
     font-weight: 300;
     line-height: 1.5em;
     text-decoration: none; }
-    /* line 87, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+    /* line 92, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
     .er_toc ul li a:focus, .er_toc ul li a:hover {
       color: #fff;
       text-decoration: none; }
-  /* line 95, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 100, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .er_toc ul ul {
     margin-bottom: 1em;
     margin-top: 0.5em;
     padding: 0; }
-  /* line 101, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 106, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .er_toc ul ul li a {
     font-weight: 200; }
-  /* line 105, /Users/magnus/Documents/Empties/source/stylesheets/_refills-nav.scss */
+  /* line 110, /Users/brendastorer/Workspaces/empties/source/stylesheets/_refills-nav.scss */
   .er_toc.is-visible {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -633,89 +632,89 @@ section.inner-content {
     -o-transform: translateX(0);
     transform: translateX(0); }
 
-/* line 2, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion.scss */
+/* line 2, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion.scss */
 .accordion > li > a {
   font-weight: normal; }
-/* line 6, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion.scss */
+/* line 6, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion.scss */
 .accordion ul.submenu {
   display: none; }
-/* line 10, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion.scss */
+/* line 10, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion.scss */
 .accordion .is-expanded {
   display: block; }
-  /* line 11, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion.scss */
+  /* line 11, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion.scss */
   .accordion .is-expanded > a {
     color: red; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
 .accordion-tabs {
   padding: 0; }
-  /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
   .accordion-tabs::after {
     clear: both;
     content: "";
     display: table; }
-  /* line 7, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+  /* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
   .accordion-tabs .tab-header-and-content {
     list-style: none; }
     @media screen and (min-width: 50em) {
-      /* line 7, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+      /* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
       .accordion-tabs .tab-header-and-content {
         display: inline; } }
-  /* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+  /* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
   .accordion-tabs .tab-link {
     display: block;
     padding-right: 1em; }
     @media screen and (min-width: 50em) {
-      /* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+      /* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
       .accordion-tabs .tab-link {
         display: inline-block; } }
-  /* line 24, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+  /* line 24, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
   .accordion-tabs .is-active {
     color: #ff0000; }
-  /* line 28, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+  /* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
   .accordion-tabs .tab-content {
     display: none;
     width: 100%; }
     @media screen and (min-width: 50em) {
-      /* line 28, /Users/magnus/Documents/Empties/source/stylesheets/refills/_accordion-tabs.scss */
+      /* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_accordion-tabs.scss */
       .accordion-tabs .tab-content {
         float: left; } }
 
-/* line 4, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-group.scss */
+/* line 4, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-group.scss */
 .button-group input {
   display: none; }
-/* line 8, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-group.scss */
+/* line 8, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-group.scss */
 .button-group label {
   font-weight: normal; }
   @media screen and (min-width: 50em) {
-    /* line 8, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-group.scss */
+    /* line 8, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-group.scss */
     .button-group label {
       float: left;
       padding: 0 0.5em; } }
-/* line 17, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-group.scss */
+/* line 17, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-group.scss */
 .button-group .button-group-item {
   cursor: pointer;
   display: inline-block;
   width: 100%; }
   @media screen and (min-width: 50em) {
-    /* line 17, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-group.scss */
+    /* line 17, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-group.scss */
     .button-group .button-group-item {
       width: auto; } }
-/* line 27, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-group.scss */
+/* line 27, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-group.scss */
 .button-group input:checked + .button-group-item {
   color: #ff0000; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-icon.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-icon.scss */
 .button-icon {
   align-items: center;
   display: flex;
   justify-content: center;
   width: 100%; }
-  /* line 7, /Users/magnus/Documents/Empties/source/stylesheets/refills/_button-icon.scss */
+  /* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_button-icon.scss */
   .button-icon img {
     margin-right: 1em; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_cards.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_cards.scss */
 .cards {
   display: -webkit-box;
   display: -moz-box;
@@ -740,7 +739,7 @@ section.inner-content {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify; }
-  /* line 6, /Users/magnus/Documents/Empties/source/stylesheets/refills/_cards.scss */
+  /* line 6, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_cards.scss */
   .cards .card {
     -webkit-flex-basis: 20em;
     -moz-flex-basis: 20em;
@@ -751,61 +750,61 @@ section.inner-content {
     flex-grow: 1;
     -ms-flex-positive: 1;
     margin: 0 1em; }
-  /* line 12, /Users/magnus/Documents/Empties/source/stylesheets/refills/_cards.scss */
+  /* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_cards.scss */
   .cards .card-image {
     height: 15em;
     background: whitesmoke;
     overflow: hidden; }
-    /* line 17, /Users/magnus/Documents/Empties/source/stylesheets/refills/_cards.scss */
+    /* line 17, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_cards.scss */
     .cards .card-image img {
       width: 100%; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_comment.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_comment.scss */
 .comment {
   display: table;
   width: 100%; }
-  /* line 5, /Users/magnus/Documents/Empties/source/stylesheets/refills/_comment.scss */
+  /* line 5, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_comment.scss */
   .comment .comment-image,
   .comment .comment-content {
     display: table-cell;
     vertical-align: top; }
-  /* line 11, /Users/magnus/Documents/Empties/source/stylesheets/refills/_comment.scss */
+  /* line 11, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_comment.scss */
   .comment h4 {
     margin-top: 0; }
-  /* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_comment.scss */
+  /* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_comment.scss */
   .comment .comment-image {
     padding-right: 1.618em; }
-    /* line 18, /Users/magnus/Documents/Empties/source/stylesheets/refills/_comment.scss */
+    /* line 18, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_comment.scss */
     .comment .comment-image img {
       height: 3em;
       max-width: none; }
-    /* line 23, /Users/magnus/Documents/Empties/source/stylesheets/refills/_comment.scss */
+    /* line 23, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_comment.scss */
     .comment-reverse-order .comment .comment-image {
       padding-left: 10px;
       padding-right: 0; }
-  /* line 29, /Users/magnus/Documents/Empties/source/stylesheets/refills/_comment.scss */
+  /* line 29, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_comment.scss */
   .comment .comment-content {
     width: 100%; }
 
-/* line 4, /Users/magnus/Documents/Empties/source/stylesheets/refills/_dropdown.scss */
+/* line 4, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_dropdown.scss */
 .dropdown .dropdown-container {
   display: inline-block;
   position: relative;
   text-align: center; }
-/* line 10, /Users/magnus/Documents/Empties/source/stylesheets/refills/_dropdown.scss */
+/* line 10, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_dropdown.scss */
 .dropdown .dropdown-description {
   float: left;
   padding-right: 1em; }
-/* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_dropdown.scss */
+/* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_dropdown.scss */
 .dropdown .dropdown-button {
   cursor: pointer;
   float: right;
   position: relative; }
-/* line 21, /Users/magnus/Documents/Empties/source/stylesheets/refills/_dropdown.scss */
+/* line 21, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_dropdown.scss */
 .dropdown .dropdown-button:after {
   display: block;
   position: absolute; }
-/* line 26, /Users/magnus/Documents/Empties/source/stylesheets/refills/_dropdown.scss */
+/* line 26, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_dropdown.scss */
 .dropdown .dropdown-menu {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -818,56 +817,56 @@ section.inner-content {
   top: 50px;
   width: 228px;
   z-index: 99999; }
-/* line 38, /Users/magnus/Documents/Empties/source/stylesheets/refills/_dropdown.scss */
+/* line 38, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_dropdown.scss */
 .dropdown .show-menu {
   display: block; }
 
-/* line 2, /Users/magnus/Documents/Empties/source/stylesheets/refills/_expander.scss */
+/* line 2, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_expander.scss */
 .expander .expander-trigger {
   display: block; }
-  /* line 5, /Users/magnus/Documents/Empties/source/stylesheets/refills/_expander.scss */
+  /* line 5, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_expander.scss */
   .expander .expander-trigger:before {
     content: "\25BC";
     margin-right: 0.5em; }
-/* line 12, /Users/magnus/Documents/Empties/source/stylesheets/refills/_expander.scss */
+/* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_expander.scss */
 .expander .expander-hidden:before {
   content: "\25BA"; }
-/* line 17, /Users/magnus/Documents/Empties/source/stylesheets/refills/_expander.scss */
+/* line 17, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_expander.scss */
 .expander .expander-hidden + .expander-content {
   display: none; }
 
-/* line 31, /Users/magnus/Documents/Empties/source/stylesheets/refills/_footer.scss */
+/* line 31, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_footer.scss */
 .footer .footer-logo {
   margin-bottom: 1em;
   margin-right: 1em; }
   @media screen and (min-width: 50em) {
-    /* line 31, /Users/magnus/Documents/Empties/source/stylesheets/refills/_footer.scss */
+    /* line 31, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_footer.scss */
     .footer .footer-logo {
       float: left;
       margin-bottom: 0; } }
-  /* line 40, /Users/magnus/Documents/Empties/source/stylesheets/refills/_footer.scss */
+  /* line 40, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_footer.scss */
   .footer .footer-logo img {
     height: 2.2em; }
-/* line 45, /Users/magnus/Documents/Empties/source/stylesheets/refills/_footer.scss */
+/* line 45, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_footer.scss */
 .footer ul {
   margin: 0;
   padding-left: 0; }
   @media screen and (min-width: 50em) {
-    /* line 45, /Users/magnus/Documents/Empties/source/stylesheets/refills/_footer.scss */
+    /* line 45, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_footer.scss */
     .footer ul {
       float: left;
       padding-top: 0.3em; } }
-  /* line 54, /Users/magnus/Documents/Empties/source/stylesheets/refills/_footer.scss */
+  /* line 54, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_footer.scss */
   .footer ul li {
     line-height: 1.5em;
     padding-right: 1em; }
     @media screen and (min-width: 50em) {
-      /* line 54, /Users/magnus/Documents/Empties/source/stylesheets/refills/_footer.scss */
+      /* line 54, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_footer.scss */
       .footer ul li {
         display: inline;
         text-align: left; } }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hero.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hero.scss */
 .hero {
   align-items: center;
   background: url("../images/background-image.png");
@@ -878,129 +877,129 @@ section.inner-content {
   min-height: 25em;
   padding: 2em; }
   @media screen and (min-width: 50em) {
-    /* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hero.scss */
+    /* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hero.scss */
     .hero {
       background-size: cover;
       background-position: left;
       justify-content: flex-end; } }
-  /* line 18, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hero.scss */
+  /* line 18, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hero.scss */
   .hero .hero-content {
     max-width: 20em;
     text-align: center; }
     @media screen and (min-width: 50em) {
-      /* line 18, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hero.scss */
+      /* line 18, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hero.scss */
       .hero .hero-content {
         text-align: left; } }
-  /* line 27, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hero.scss */
+  /* line 27, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hero.scss */
   .hero .hero-logo {
     margin: auto; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
 .hover-menu {
   overflow: visible;
   padding-right: 0; }
   @media screen and (min-width: 50em) {
-    /* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+    /* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
     .hover-menu {
       position: relative; } }
-  /* line 12, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+  /* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
   .hover-menu .hover-menu-item {
     left: 0;
     position: relative; }
-    /* line 16, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+    /* line 16, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
     .hover-menu .hover-menu-item::after {
       content: "›";
       padding-left: 0.5em; }
-  /* line 22, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+  /* line 22, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
   .hover-menu .submenu {
     display: none;
     margin: 0;
     padding-left: 0; }
     @media screen and (min-width: 50em) {
-      /* line 22, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+      /* line 22, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
       .hover-menu .submenu {
         left: 0;
         position: absolute; } }
-  /* line 33, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+  /* line 33, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
   .hover-menu .submenu li {
     display: block;
     padding-right: 0; }
-  /* line 38, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+  /* line 38, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
   .hover-menu .submenu li a {
     display: inline-block;
     text-align: right;
     width: 100%; }
     @media screen and (min-width: 50em) {
-      /* line 38, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+      /* line 38, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
       .hover-menu .submenu li a {
         text-align: left;
         width: 12em; } }
   @media screen and (min-width: 50em) {
-    /* line 49, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+    /* line 49, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
     .hover-menu .submenu .submenu {
       left: 12em;
       top: 0; } }
-  /* line 56, /Users/magnus/Documents/Empties/source/stylesheets/refills/_hover-menu.scss */
+  /* line 56, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_hover-menu.scss */
   .hover-menu:focus > .submenu, .hover-menu:hover > .submenu {
     display: block; }
 
-/* line 2, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login.scss */
+/* line 2, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login.scss */
 .login .login-logo {
   display: block;
   margin: auto;
   height: 3em; }
-/* line 8, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login.scss */
+/* line 8, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login.scss */
 .login label {
   float: left; }
-/* line 12, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login.scss */
+/* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login.scss */
 .login input[type="text"] {
   width: 100%; }
-/* line 16, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login.scss */
+/* line 16, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login.scss */
 .login .forgot-password {
   float: right; }
-/* line 20, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login.scss */
+/* line 20, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login.scss */
 .login .login-button {
   float: left; }
-/* line 24, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login.scss */
+/* line 24, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login.scss */
 .login .remember-me {
   float: right; }
-/* line 28, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login.scss */
+/* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login.scss */
 .login input[type="checkbox"] {
   display: inline; }
 
-/* line 2, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login-stacked.scss */
+/* line 2, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login-stacked.scss */
 .login-stacked .login-logo {
   display: block;
   margin: 0 auto 2em;
   height: 3em; }
-/* line 8, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login-stacked.scss */
+/* line 8, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login-stacked.scss */
 .login-stacked label {
   float: left; }
-/* line 12, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login-stacked.scss */
+/* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login-stacked.scss */
 .login-stacked input[type="text"] {
   width: 100%; }
-/* line 16, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login-stacked.scss */
+/* line 16, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login-stacked.scss */
 .login-stacked .forgot-password {
   float: right; }
-/* line 20, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login-stacked.scss */
+/* line 20, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login-stacked.scss */
 .login-stacked .login-button {
   width: 100%; }
-/* line 24, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login-stacked.scss */
+/* line 24, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login-stacked.scss */
 .login-stacked .remember-me {
   float: left; }
-/* line 28, /Users/magnus/Documents/Empties/source/stylesheets/refills/_login-stacked.scss */
+/* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_login-stacked.scss */
 .login-stacked input[type="checkbox"] {
   display: inline; }
 
-/* line 5, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 5, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal label {
   cursor: pointer;
   font-weight: normal;
   margin-bottom: 0; }
-/* line 11, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 11, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal .modal-state {
   display: none; }
-/* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal .modal-fade-screen {
   position: fixed;
   top: 0;
@@ -1013,10 +1012,10 @@ section.inner-content {
   visibility: hidden;
   z-index: 99999; }
   @media screen and (min-width: 50em) {
-    /* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+    /* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
     .modal .modal-fade-screen {
       padding-top: 10em; } }
-/* line 28, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal .modal-bg {
   position: absolute;
   top: 0;
@@ -1024,10 +1023,10 @@ section.inner-content {
   bottom: 0;
   left: 0;
   cursor: pointer; }
-/* line 33, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 33, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal .modal-close {
   cursor: pointer; }
-/* line 37, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 37, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal .modal-inner {
   background-color: #fff;
   margin: auto;
@@ -1038,73 +1037,73 @@ section.inner-content {
   transition: opacity 0.25s ease;
   width: 95%; }
   @media screen and (min-width: 30em) {
-    /* line 37, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+    /* line 37, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
     .modal .modal-inner {
       max-height: 70%;
       width: 60%; } }
   @media screen and (min-width: 50em) {
-    /* line 37, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+    /* line 37, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
     .modal .modal-inner {
       width: 50%; } }
-/* line 57, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 57, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal .modal-state:checked + .modal-fade-screen {
   opacity: 1;
   visibility: visible; }
 
-/* line 63, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 63, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal-open {
   overflow: hidden; }
 
-/* line 67, /Users/magnus/Documents/Empties/source/stylesheets/refills/_modal.scss */
+/* line 67, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_modal.scss */
 .modal-closed {
   overflow: auto; }
 
-/* line 6, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+/* line 6, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
 .navigation .navigation-menu-button {
   display: block;
   float: right;
   margin: 0;
   padding-top: 0.5em; }
   @media screen and (min-width: 30em) {
-    /* line 6, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+    /* line 6, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
     .navigation .navigation-menu-button {
       display: none; } }
-/* line 18, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+/* line 18, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
 .navigation .navigation-wrapper {
   position: relative; }
-  /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
   .navigation .navigation-wrapper::after {
     clear: both;
     content: "";
     display: table; }
-/* line 23, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+/* line 23, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
 .navigation .logo {
   float: left; }
   @media screen and (min-width: 30em) {
-    /* line 23, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+    /* line 23, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
     .navigation .logo {
       float: none;
       text-align: center;
       display: block; } }
   @media screen and (min-width: 50em) {
-    /* line 23, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+    /* line 23, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
     .navigation .logo {
       float: left; } }
-  /* line 36, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+  /* line 36, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
   .navigation .logo img {
     max-height: 2em;
     padding-right: 1em; }
-/* line 42, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+/* line 42, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
 .navigation nav {
   float: none; }
   @media screen and (min-width: 30em) {
-    /* line 42, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+    /* line 42, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
     .navigation nav {
       float: left;
       text-align: center;
       line-height: 1.5em;
       padding-top: 0.3em; } }
-/* line 53, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+/* line 53, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
 .navigation ul.navigation-menu {
   clear: both;
   display: none;
@@ -1113,73 +1112,73 @@ section.inner-content {
   padding: 0;
   width: 100%; }
   @media screen and (min-width: 30em) {
-    /* line 53, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+    /* line 53, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
     .navigation ul.navigation-menu {
       display: block;
       margin: 0;
       padding: 0; } }
-  /* line 67, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+  /* line 67, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
   .navigation ul.navigation-menu.show {
     display: block; }
-/* line 73, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+/* line 73, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
 .navigation ul li.nav-link {
   display: block;
   text-align: right;
   width: 100%; }
   @media screen and (min-width: 30em) {
-    /* line 73, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+    /* line 73, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
     .navigation ul li.nav-link {
       background: transparent;
       display: inline;
       text-decoration: none;
       width: auto; } }
-/* line 86, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+/* line 86, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
 .navigation li.nav-link a {
   display: inline-block; }
   @media screen and (min-width: 50em) {
-    /* line 86, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation.scss */
+    /* line 86, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation.scss */
     .navigation li.nav-link a {
       padding-right: 1em; } }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
 .navigation-centered {
   width: 100%; }
-  /* line 9, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+  /* line 9, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
   .navigation-centered .mobile-logo {
     display: inline;
     float: left; }
     @media screen and (min-width: 50em) {
-      /* line 9, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+      /* line 9, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
       .navigation-centered .mobile-logo {
         display: none; } }
-    /* line 17, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+    /* line 17, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
     .navigation-centered .mobile-logo img {
       max-height: 2em; }
-  /* line 22, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+  /* line 22, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
   .navigation-centered .navigation-centered-mobile-menu {
     float: right;
     padding-top: 0.5em; }
     @media screen and (min-width: 50em) {
-      /* line 22, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+      /* line 22, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
       .navigation-centered .navigation-centered-mobile-menu {
         display: none; } }
-  /* line 32, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+  /* line 32, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
   .navigation-centered .navigation-centered-wrapper {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     position: relative; }
-    /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+    /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
     .navigation-centered .navigation-centered-wrapper::after {
       clear: both;
       content: "";
       display: table; }
-    /* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+    /* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
     .navigation-centered .navigation-centered-wrapper::after {
       clear: both;
       content: "";
       display: table; }
-  /* line 38, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+  /* line 38, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
   .navigation-centered ul.navigation-centered-menu {
     clear: both;
     display: none;
@@ -1187,79 +1186,79 @@ section.inner-content {
     overflow: visible;
     padding: 0;
     width: 100%; }
-    /* line 46, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+    /* line 46, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
     .navigation-centered ul.navigation-centered-menu.show {
       display: block; }
     @media screen and (min-width: 50em) {
-      /* line 38, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+      /* line 38, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
       .navigation-centered ul.navigation-centered-menu {
         display: block;
         text-align: center; } }
-  /* line 57, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+  /* line 57, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
   .navigation-centered ul li.nav-link {
     display: block;
     text-align: right;
     width: 100%; }
-    /* line 62, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+    /* line 62, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
     .navigation-centered ul li.nav-link a {
       display: inline-block; }
-    /* line 66, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+    /* line 66, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
     .navigation-centered ul li.nav-link:last-child a {
       padding-right: 0; }
     @media screen and (min-width: 50em) {
-      /* line 57, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+      /* line 57, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
       .navigation-centered ul li.nav-link {
         display: inline; }
-        /* line 73, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+        /* line 73, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
         .navigation-centered ul li.nav-link a {
           padding-right: 1em; } }
-  /* line 80, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+  /* line 80, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
   .navigation-centered li.logo.nav-link {
     display: none;
     line-height: 0; }
     @media screen and (min-width: 50em) {
-      /* line 80, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+      /* line 80, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
       .navigation-centered li.logo.nav-link {
         display: inline; } }
-  /* line 89, /Users/magnus/Documents/Empties/source/stylesheets/refills/_navigation-centered.scss */
+  /* line 89, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_navigation-centered.scss */
   .navigation-centered .logo img {
     margin-bottom: -0.66667em;
     max-height: 2em; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_search-bar.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_search-bar.scss */
 .search-bar {
   width: 100%; }
-  /* line 4, /Users/magnus/Documents/Empties/source/stylesheets/refills/_search-bar.scss */
+  /* line 4, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_search-bar.scss */
   .search-bar form {
     position: relative; }
-  /* line 8, /Users/magnus/Documents/Empties/source/stylesheets/refills/_search-bar.scss */
+  /* line 8, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_search-bar.scss */
   .search-bar input {
     box-sizing: border-box;
     display: block;
     margin: 0;
     position: relative;
     width: 100%; }
-  /* line 16, /Users/magnus/Documents/Empties/source/stylesheets/refills/_search-bar.scss */
+  /* line 16, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_search-bar.scss */
   .search-bar button {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     padding: 5px 10px; }
-  /* line 22, /Users/magnus/Documents/Empties/source/stylesheets/refills/_search-bar.scss */
+  /* line 22, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_search-bar.scss */
   .search-bar img {
     height: 12px;
     opacity: 0.7; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_switch.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_switch.scss */
 .switch {
   cursor: pointer;
   display: inline-block;
   position: relative; }
-  /* line 12, /Users/magnus/Documents/Empties/source/stylesheets/refills/_switch.scss */
+  /* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_switch.scss */
   .switch input {
     display: none; }
-    /* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_switch.scss */
+    /* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_switch.scss */
     .switch input + .checkbox {
       height: 32px;
       width: 52px;
@@ -1268,7 +1267,7 @@ section.inner-content {
       position: relative;
       width: 52px;
       z-index: 0; }
-      /* line 23, /Users/magnus/Documents/Empties/source/stylesheets/refills/_switch.scss */
+      /* line 23, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_switch.scss */
       .switch input + .checkbox::before {
         position: absolute;
         top: 2px;
@@ -1278,7 +1277,7 @@ section.inner-content {
         content: "";
         width: 48px;
         z-index: 1; }
-      /* line 30, /Users/magnus/Documents/Empties/source/stylesheets/refills/_switch.scss */
+      /* line 30, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_switch.scss */
       .switch input + .checkbox::after {
         position: absolute;
         top: 1px;
@@ -1291,23 +1290,23 @@ section.inner-content {
         content: "";
         transition: all 0.3s ease;
         z-index: 2; }
-    /* line 41, /Users/magnus/Documents/Empties/source/stylesheets/refills/_switch.scss */
+    /* line 41, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_switch.scss */
     .switch input:checked + .checkbox {
       background-color: #aaa; }
-      /* line 44, /Users/magnus/Documents/Empties/source/stylesheets/refills/_switch.scss */
+      /* line 44, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_switch.scss */
       .switch input:checked + .checkbox::after {
         left: 21px; }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_tooltip.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_tooltip.scss */
 .tooltip-item {
   display: inline-block;
   position: relative;
   text-align: center; }
-  /* line 6, /Users/magnus/Documents/Empties/source/stylesheets/refills/_tooltip.scss */
+  /* line 6, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_tooltip.scss */
   .tooltip-item:focus .tooltip, .tooltip-item:hover .tooltip {
     opacity: 1;
     visibility: visible; }
-  /* line 12, /Users/magnus/Documents/Empties/source/stylesheets/refills/_tooltip.scss */
+  /* line 12, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_tooltip.scss */
   .tooltip-item .tooltip {
     position: absolute;
     right: 0;
@@ -1323,7 +1322,7 @@ section.inner-content {
     visibility: hidden;
     width: 12em;
     z-index: 10; }
-  /* line 24, /Users/magnus/Documents/Empties/source/stylesheets/refills/_tooltip.scss */
+  /* line 24, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_tooltip.scss */
   .tooltip-item .tooltip::after {
     position: absolute;
     right: 0;
@@ -1333,80 +1332,80 @@ section.inner-content {
     content: "▼";
     font-size: 1.4em;
     text-align: center; }
-  /* line 33, /Users/magnus/Documents/Empties/source/stylesheets/refills/_tooltip.scss */
+  /* line 33, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_tooltip.scss */
   .tooltip-item .tooltip-content {
     margin-bottom: 0; }
 
-/* line 9, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+/* line 9, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
 .vertical-tabs-container::after {
   clear: both;
   content: "";
   display: table; }
-/* line 7, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+/* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
 .vertical-tabs-container .vertical-tabs {
   display: none; }
   @media screen and (min-width: 30em) {
-    /* line 7, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+    /* line 7, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
     .vertical-tabs-container .vertical-tabs {
       display: inline;
       float: left;
       height: 20em;
       width: 20%; } }
 @media screen and (min-width: 30em) {
-  /* line 18, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+  /* line 18, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
   .vertical-tabs-container .vertical-tab {
     display: block; }
-    /* line 22, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+    /* line 22, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
     .vertical-tabs-container .vertical-tab.is-active {
       color: #ff0000; } }
-/* line 28, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+/* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
 .vertical-tabs-container .vertical-tab-content-container {
   display: block; }
   @media screen and (min-width: 30em) {
-    /* line 28, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+    /* line 28, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
     .vertical-tabs-container .vertical-tab-content-container {
       height: 20em;
       width: 80%;
       display: inline-block; } }
 @media screen and (min-width: 30em) {
-  /* line 37, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+  /* line 37, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
   .vertical-tabs-container .vertical-tab-content {
     display: none; } }
-/* line 43, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+/* line 43, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
 .vertical-tabs-container .vertical-tab-accordion-heading {
   cursor: pointer;
   display: block; }
   @media screen and (min-width: 30em) {
-    /* line 43, /Users/magnus/Documents/Empties/source/stylesheets/refills/_vertical-tabs.scss */
+    /* line 43, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_vertical-tabs.scss */
     .vertical-tabs-container .vertical-tab-accordion-heading {
       display: none; } }
 
 @media screen and (min-width: 50em) {
-  /* line 4, /Users/magnus/Documents/Empties/source/stylesheets/refills/_scroll-on-page.scss */
+  /* line 4, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_scroll-on-page.scss */
   .scroll-on-page aside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    /* line 89, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    /* line 89, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     .scroll-on-page aside:last-child {
       margin-right: 0; } }
-/* line 10, /Users/magnus/Documents/Empties/source/stylesheets/refills/_scroll-on-page.scss */
+/* line 10, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_scroll-on-page.scss */
 .scroll-on-page .scroll-on-page-link {
   display: block;
   outline: none; }
 @media screen and (min-width: 50em) {
-  /* line 15, /Users/magnus/Documents/Empties/source/stylesheets/refills/_scroll-on-page.scss */
+  /* line 15, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_scroll-on-page.scss */
   .scroll-on-page article {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%; }
-    /* line 89, /Users/magnus/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    /* line 89, /Users/brendastorer/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     .scroll-on-page article:last-child {
       margin-right: 0; } }
 
-/* line 1, /Users/magnus/Documents/Empties/source/stylesheets/refills/_sliding-panel.scss */
+/* line 1, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_sliding-panel.scss */
 .sliding-panel-content {
   position: fixed;
   top: 0;
@@ -1427,7 +1426,7 @@ section.inner-content {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999; }
-  /* line 13, /Users/magnus/Documents/Empties/source/stylesheets/refills/_sliding-panel.scss */
+  /* line 13, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_sliding-panel.scss */
   .sliding-panel-content.is-visible {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -1435,7 +1434,7 @@ section.inner-content {
     -o-transform: translateX(0);
     transform: translateX(0); }
 
-/* line 18, /Users/magnus/Documents/Empties/source/stylesheets/refills/_sliding-panel.scss */
+/* line 18, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_sliding-panel.scss */
 .sliding-panel-fade-screen {
   position: fixed;
   top: 0;
@@ -1449,11 +1448,11 @@ section.inner-content {
   opacity: 0;
   visibility: hidden;
   z-index: 9999; }
-  /* line 26, /Users/magnus/Documents/Empties/source/stylesheets/refills/_sliding-panel.scss */
+  /* line 26, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_sliding-panel.scss */
   .sliding-panel-fade-screen.is-visible {
     opacity: 0.4;
     visibility: visible; }
 
-/* line 32, /Users/magnus/Documents/Empties/source/stylesheets/refills/_sliding-panel.scss */
+/* line 32, /Users/brendastorer/Workspaces/empties/source/stylesheets/refills/_sliding-panel.scss */
 .sliding-panel-close {
   cursor: pointer; }
