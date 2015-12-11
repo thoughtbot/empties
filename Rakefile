@@ -1,8 +1,4 @@
-require 'bundler/gem_tasks'
 require 'middleman-gh-pages'
-
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:spec)
 
 desc "Compile javascript -> coffeescript"
 task :coffee do
@@ -17,6 +13,3 @@ task :coffee do
   puts "before committing the changes\n"
   puts `git status`
 end
-
-task default: :spec
-task publish: :spec
