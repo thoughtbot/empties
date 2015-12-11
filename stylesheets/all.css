@@ -1,0 +1,1782 @@
+@charset "UTF-8";
+@import url(vendor/normalize.css);
+@import url(vendor/fixedsticky.css);
+@import url(vendor/prism.css);
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_buttons.scss */
+input[type="button"], input[type="reset"], input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: #477dca;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  /* line 21, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_buttons.scss */
+  input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
+  button:hover,
+  button:focus {
+    background-color: #2c5999;
+    color: #fff; }
+  /* line 27, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_buttons.scss */
+  input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
+
+/* line 8, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+  label.required::after {
+    content: "*"; }
+  /* line 24, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple],
+textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color;
+  width: 100%; }
+  /* line 44, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover,
+  textarea:hover {
+    border-color: #c4c4c4; }
+  /* line 48, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus,
+  textarea:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+  /* line 54, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+  input[type="email"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="url"]:disabled, input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="month"]:disabled, input[type="time"]:disabled, input[type="week"]:disabled,
+  select[multiple=multiple]:disabled,
+  textarea:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed; }
+    /* line 58, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+    input[type="email"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="url"]:disabled:hover, input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="month"]:disabled:hover, input[type="time"]:disabled:hover, input[type="week"]:disabled:hover,
+    select[multiple=multiple]:disabled:hover,
+    textarea:disabled:hover {
+      border: 1px solid #ddd; }
+
+/* line 64, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 68, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 72, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 78, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 83, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+/* line 20, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_tables.scss */
+table {
+  -webkit-font-feature-settings: "kern", "liga", "tnum";
+  -moz-font-feature-settings: "kern", "liga", "tnum";
+  -ms-font-feature-settings: "kern", "liga", "tnum";
+  font-feature-settings: "kern", "liga", "tnum";
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 9, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 16, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0; }
+
+/* line 21, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5; }
+
+/* line 10, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+/* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 26, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+a {
+  color: #477dca;
+  text-decoration: none;
+  transition: color 0.1s linear; }
+  /* line 31, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+  a:active, a:focus, a:hover {
+    color: #2c5999; }
+  /* line 37, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    outline: none; }
+
+/* line 43, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 51, /Users/calleerlandsson/Projects/empties/source/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-styles.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  background: #fff;
+  min-width: 320px; }
+
+/* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+.menu-wrapper::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* line 19, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-styles.scss */
+#example {
+  background: #fff;
+  display: inline-block;
+  padding-top: 1em;
+  position: relative;
+  width: 100%; }
+  @media screen and (min-width: 53.75em) {
+    /* line 19, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-styles.scss */
+    #example {
+      padding-top: 3em; } }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+.refills-header {
+  background-color: #F1F1F1;
+  clear: both;
+  margin-bottom: 1em;
+  padding: 5em 0 8em;
+  text-align: center;
+  width: 100%; }
+  /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  .refills-header::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 40em) {
+    /* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+    .refills-header {
+      margin-bottom: 4em;
+      padding: 6em 0 10em; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+    .refills-header {
+      border-bottom: 2px solid #e4e4e4;
+      margin-bottom: 4em;
+      padding: 6em 0 11em 0; } }
+  /* line 21, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+  .refills-header .refills-logo {
+    display: inline-block;
+    margin: 0 auto 1.4em auto; }
+    @media screen and (min-width: 40em) {
+      /* line 21, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+      .refills-header .refills-logo {
+        max-height: 8em;
+        max-width: 8em; } }
+    /* line 30, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+    .refills-header .refills-logo img {
+      background: #fff;
+      margin-bottom: 1em;
+      max-height: 5em;
+      max-width: 5em;
+      padding: 0.3em; }
+      @media screen and (min-width: 40em) {
+        /* line 30, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+        .refills-header .refills-logo img {
+          margin-bottom: 2em;
+          max-height: 8em;
+          max-width: 8em;
+          padding: 0.5em; } }
+  /* line 46, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+  .refills-header h2 {
+    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    line-height: 1.4em;
+    margin: 0 auto 2em auto;
+    max-width: 80%;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      /* line 46, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+      .refills-header h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        max-width: 80%; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 46, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+      .refills-header h2 {
+        font-size: 3em;
+        line-height: 1.3em;
+        margin-bottom: 0.8em;
+        max-width: 45%; } }
+  /* line 69, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+  .refills-header h3 {
+    font-size: 1.3em;
+    font-weight: 200;
+    margin-bottom: 1em;
+    text-align: center; }
+  /* line 76, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+  .refills-header a {
+    color: #f55481;
+    text-decoration: none; }
+    /* line 80, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+    .refills-header a:focus, .refills-header a:hover {
+      color: #f884a5; }
+  /* line 86, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+  .refills-header p {
+    background: #ececec;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    color: #87a898;
+    display: inline;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding: 0.5em 1.4em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 86, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-header.scss */
+      .refills-header p {
+        font-size: 0.8em; } }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+ul.refills-menu {
+  font-weight: normal;
+  margin-bottom: 5em;
+  margin: -3em auto 0.7em auto;
+  padding: 0;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    /* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+    ul.refills-menu {
+      margin: -6em auto 0.4em auto; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+    ul.refills-menu {
+      margin: -6.7em auto 0.8em auto; } }
+  /* line 16, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+  ul.refills-menu .menu-item {
+    display: inline; }
+    /* line 19, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+    ul.refills-menu .menu-item a {
+      background: #ececec;
+      border: 1px solid #dfdfdf;
+      box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+      border-radius: 3px;
+      color: #989898;
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      font-size: 0.8em;
+      padding: 0.5em 1em 1.5em;
+      text-decoration: none; }
+      @media screen and (min-width: 40em) {
+        /* line 19, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+        ul.refills-menu .menu-item a {
+          font-size: 1em;
+          padding: 0.5em 1.8em 1.3em; } }
+      @media screen and (min-width: 53.75em) {
+        /* line 19, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+        ul.refills-menu .menu-item a {
+          font-size: 1.2em;
+          padding: 0.7em 2.7em 2em; } }
+      /* line 39, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+      ul.refills-menu .menu-item a:hover {
+        color: #a5a5a5; }
+
+/* line 46, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+.refills-patterns li.patterns a {
+  background: #fff;
+  box-shadow: none; }
+  /* line 50, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+  .refills-patterns li.patterns a:hover {
+    color: #bebebe; }
+
+/* line 55, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+.refills-components li.components a {
+  background: #fff;
+  box-shadow: none; }
+  /* line 59, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+  .refills-components li.components a:hover {
+    color: #bebebe; }
+
+/* line 64, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+.refills-type-systems li.type-systems a {
+  background: #fff;
+  box-shadow: none; }
+  /* line 68, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+  .refills-type-systems li.type-systems a:hover {
+    color: #bebebe; }
+
+/* line 73, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+.refills-unstyled li.unstyled a {
+  background: #fff;
+  box-shadow: none; }
+  /* line 77, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+  .refills-unstyled li.unstyled a:hover {
+    color: #bebebe; }
+
+/* line 82, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+.menu-item.unstyled {
+  position: relative; }
+
+/* line 86, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-menu.scss */
+.menu-item.unstyled:after {
+  -webkit-transform: scale(0.4) rotate(13deg);
+  -moz-transform: scale(0.4) rotate(13deg);
+  -ms-transform: scale(0.4) rotate(13deg);
+  -o-transform: scale(0.4) rotate(13deg);
+  transform: scale(0.4) rotate(13deg);
+  content: url("/images/new.svg");
+  position: absolute;
+  right: -42px;
+  top: -63px; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+section.refill {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  position: relative; }
+  /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  section.refill::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  section.refill > h3 {
+    margin-bottom: 1.3em;
+    margin-top: 1em;
+    padding-top: 0.5em; }
+
+/* line 14, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.refills-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em; }
+  /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  .refills-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 18, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refills-wrapper h1.main-header {
+    background-color: #82caca;
+    display: inline-block;
+    padding: 0.5em; }
+
+/* line 25, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.refill-centering {
+  text-align: center; }
+  /* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refill-centering > * {
+    display: inline-block; }
+    /* line 31, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+    .refill-centering > * > * {
+      text-align: left; }
+  /* line 36, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refill-centering script {
+    display: none; }
+
+/* line 41, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.line-behind-text {
+  border-bottom: 1px solid #cacaca;
+  text-align: center;
+  margin-bottom: 4.5em; }
+
+/* line 47, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.line-behind-text h6 {
+  background: #fff;
+  color: #808080;
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0 10px;
+  position: relative;
+  text-transform: uppercase;
+  top: 34px; }
+
+/* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.refill h6 {
+  margin-bottom: 1.5em; }
+
+/* line 64, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.js-hide-code,
+.js-show-code {
+  border-top: 1px dashed #bebcbc;
+  color: #7e7a7a;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  width: 9em; }
+  /* line 72, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .js-hide-code:hover,
+  .js-show-code:hover {
+    color: #477dca; }
+
+/* line 77, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.js-show-code {
+  display: inline-block;
+  padding: 0.5em 1em; }
+
+/* line 82, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.js-hide-code {
+  display: none;
+  padding: 0.5em 1em; }
+
+/* line 88, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.refill-control {
+  display: block;
+  margin-bottom: 2em;
+  text-align: center;
+  width: 100%; }
+  /* line 94, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refill-control a {
+    line-height: 1.5em;
+    text-decoration: none; }
+
+/* line 101, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.refill-snippet {
+  margin-top: 4.5em;
+  padding: 0 1em; }
+  /* line 105, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refill-snippet table {
+    border-collapse: collapse;
+    margin: 0.75em 0;
+    table-layout: fixed;
+    width: 100%; }
+  /* line 112, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refill-snippet th {
+    font-weight: bold;
+    padding: 0.75em 0;
+    text-align: left; }
+  /* line 118, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refill-snippet td {
+    padding: 0.75em 0; }
+  /* line 122, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .refill-snippet tr,
+  .refill-snippet td,
+  .refill-snippet th {
+    vertical-align: middle; }
+
+/* line 129, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+pre[class*="language-"] {
+  background-color: #f8f8f8;
+  border-top: 2px solid silver;
+  height: 300px;
+  line-height: 1em; }
+
+/* line 136, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippets-table {
+  display: none; }
+  /* line 139, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .snippets-table td {
+    border-bottom: 0; }
+  /* line 143, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .snippets-table .snippet:nth-child(4n) {
+    display: none; }
+
+@media screen and (min-width: 40em) {
+  /* line 148, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .snippet {
+    margin-bottom: 2em; } }
+/* line 153, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet .copy-source-container {
+  min-height: 3.4em; }
+  @media screen and (min-width: 40em) {
+    /* line 153, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+    .snippet .copy-source-container {
+      min-height: 2.5em; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 153, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+    .snippet .copy-source-container {
+      min-height: 1em; } }
+/* line 165, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet:nth-of-type(1) .copy-source {
+  background: #e98065; }
+/* line 169, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet:nth-of-type(2) .copy-source {
+  background: #55a1d4; }
+/* line 173, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet:nth-of-type(3) .copy-source:nth-of-type(1) {
+  background: #e9c05b; }
+/* line 177, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet:nth-of-type(3) .copy-source:nth-of-type(2) {
+  background: #89b981; }
+/* line 181, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet .copy-source {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.5em;
+  font-weight: 800;
+  padding: 0.4em 1em;
+  text-transform: uppercase; }
+  /* line 193, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+  .snippet .copy-source:hover, .snippet .copy-source:active {
+    background-color: #666666;
+    color: #fff; }
+/* line 200, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet a {
+  text-decoration: none; }
+/* line 204, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.snippet code {
+  font-size: 0.6em;
+  line-height: 1.4em;
+  max-height: 25em;
+  overflow: scroll; }
+
+/* line 212, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refill.scss */
+.refill-smaller {
+  margin: auto;
+  width: 70%; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+footer.refills-footer {
+  color: silver;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  text-align: center; }
+  /* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+  footer.refills-footer a {
+    color: #f55481;
+    text-decoration: none; }
+  /* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+  footer.refills-footer p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 0 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+      footer.refills-footer p {
+        font-size: 1em; } }
+  /* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+  footer.refills-footer .refills-footer-logo {
+    margin-bottom: 2em; }
+  /* line 26, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+  footer.refills-footer img {
+    display: block;
+    height: 60px;
+    margin: auto; }
+    /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+    footer.refills-footer img::after {
+      clear: both;
+      content: "";
+      display: table; }
+  /* line 33, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+  footer.refills-footer .footer-links {
+    border-top: 2px solid;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-bottom: 4em;
+    padding: 0.6em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      /* line 33, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+      footer.refills-footer .footer-links {
+        font-size: 1em;
+        padding: 1em; } }
+    /* line 48, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+    footer.refills-footer .footer-links li {
+      display: inline;
+      padding: 0.4em; }
+      /* line 52, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+      footer.refills-footer .footer-links li a {
+        color: #a7a7a7;
+        text-decoration: none; }
+        /* line 56, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-footer.scss */
+        footer.refills-footer .footer-links li a:hover {
+          color: #f55481; }
+
+/* line 3, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+nav.bourbon {
+  background-color: #5b5e63;
+  padding: 0 2em 0 1em;
+  text-rendering: optimizeLegibility; }
+  /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  nav.bourbon::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 31.875em) {
+    /* line 3, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon {
+      padding: 0; } }
+  /* line 13, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+  nav.bourbon ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    @media screen and (min-width: 56.3125em) {
+      /* line 13, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+      nav.bourbon ul {
+        float: left;
+        text-align: left; } }
+  /* line 25, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+  nav.bourbon li {
+    display: inline-block; }
+  /* line 29, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+  nav.bourbon a {
+    background-position: 1em center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1em 1em 1em 3em;
+    text-decoration: none; }
+    @media screen and (max-width: 32.1875em) {
+      /* line 29, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+      nav.bourbon a {
+        padding: 0.75em 0.5em;
+        text-align: center; } }
+    @media screen and (max-width: 56.25em) {
+      /* line 29, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+      nav.bourbon a {
+        display: block; } }
+    /* line 47, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon a:focus, nav.bourbon a:hover {
+      background-color: #434548;
+      color: #fff; }
+    /* line 53, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon a.current {
+      background-color: #4f5156; }
+    /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon a.bourbon {
+      background-image: url("/images/bourbon-nav/bourbon.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.bourbon {
+          background-image: url("/images/bourbon-nav/bourbon@2x.png");
+          background-size: 20%; } }
+      @media screen and (max-width: 32.1875em) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.bourbon {
+          background-image: none; } }
+    /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon a.neat {
+      background-image: url("/images/bourbon-nav/neat.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.neat {
+          background-image: url("/images/bourbon-nav/neat@2x.png");
+          background-size: 20%; } }
+      @media screen and (max-width: 32.1875em) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.neat {
+          background-image: none; } }
+    /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon a.bitters {
+      background-image: url("/images/bourbon-nav/bitters.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.bitters {
+          background-image: url("/images/bourbon-nav/bitters@2x.png");
+          background-size: 20%; } }
+      @media screen and (max-width: 32.1875em) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.bitters {
+          background-image: none; } }
+    /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon a.refills {
+      background-image: url("/images/bourbon-nav/refills.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.refills {
+          background-image: url("/images/bourbon-nav/refills@2x.png");
+          background-size: 20%; } }
+      @media screen and (max-width: 32.1875em) {
+        /* line 60, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+        nav.bourbon a.refills {
+          background-image: none; } }
+  /* line 75, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+  nav.bourbon h1 {
+    color: rgba(255, 255, 255, 0.6);
+    float: right;
+    font-size: 1em;
+    margin: 0; }
+    @media screen and (max-width: 56.25em) {
+      /* line 75, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+      nav.bourbon h1 {
+        display: none; } }
+    /* line 85, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+    nav.bourbon h1 a {
+      padding: 1em 0;
+      text-decoration: none; }
+      /* line 89, /Users/calleerlandsson/Projects/empties/source/stylesheets/_bourbon-nav.scss */
+      nav.bourbon h1 a:hover {
+        background-color: transparent; }
+
+/* line 3, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+section.inner-content {
+  margin-left: auto; }
+
+/* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+.refills-menu-anchor {
+  position: fixed;
+  top: 4.5em;
+  left: 1em;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #87a898;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  margin-bottom: 1.5em;
+  transition: all 0.2s ease-in-out;
+  z-index: 9999; }
+  /* line 20, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .refills-menu-anchor.fixedsticky-on {
+    margin-top: 0; }
+  /* line 24, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .refills-menu-anchor.fixedsticky-off {
+    position: fixed; }
+  /* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .refills-menu-anchor img {
+    height: 26px;
+    width: 30px;
+    max-width: 100%; }
+
+/* line 34, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+.refills-menu-anchor-moved {
+  top: 1em; }
+
+/* line 38, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+.fixedsticky-dummy {
+  height: 0 !important; }
+
+/* line 42, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+.refills-menu-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background-color: teal;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999998; }
+  /* line 50, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .refills-menu-screen.is-visible {
+    opacity: 0;
+    visibility: visible; }
+
+/* line 56, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+.er_toc_title,
+.er_toc_top {
+  display: none; }
+
+/* line 61, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+.er_toc {
+  position: fixed;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  -webkit-transform: translateX(-220px);
+  -moz-transform: translateX(-220px);
+  -ms-transform: translateX(-220px);
+  -o-transform: translateX(-220px);
+  transform: translateX(-220px);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: black;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.2s linear;
+  z-index: 999999; }
+  /* line 74, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .er_toc ul {
+    margin: 0;
+    padding: 1em; }
+  /* line 80, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .er_toc ul li a {
+    color: #d9d9d9;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    text-decoration: none; }
+    /* line 87, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+    .er_toc ul li a:focus, .er_toc ul li a:hover {
+      color: #fff;
+      text-decoration: none; }
+  /* line 95, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .er_toc ul ul {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    padding: 0; }
+  /* line 101, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .er_toc ul ul li a {
+    font-weight: 200; }
+  /* line 105, /Users/calleerlandsson/Projects/empties/source/stylesheets/_refills-nav.scss */
+  .er_toc.is-visible {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+
+/* line 2, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion.scss */
+.accordion > li > a {
+  font-weight: normal; }
+/* line 6, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion.scss */
+.accordion ul.submenu {
+  display: none; }
+/* line 10, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion.scss */
+.accordion .is-expanded {
+  display: block; }
+  /* line 11, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion.scss */
+  .accordion .is-expanded > a {
+    color: red; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+.accordion-tabs {
+  padding: 0; }
+  /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  .accordion-tabs::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+  .accordion-tabs .tab-header-and-content {
+    list-style: none; }
+    @media screen and (min-width: 50em) {
+      /* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+      .accordion-tabs .tab-header-and-content {
+        display: inline; } }
+  /* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+  .accordion-tabs .tab-link {
+    display: block;
+    padding-right: 1em; }
+    @media screen and (min-width: 50em) {
+      /* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+      .accordion-tabs .tab-link {
+        display: inline-block; } }
+  /* line 24, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+  .accordion-tabs .is-active {
+    color: #ff0000; }
+  /* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+  .accordion-tabs .tab-content {
+    display: none;
+    width: 100%; }
+    @media screen and (min-width: 50em) {
+      /* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_accordion-tabs.scss */
+      .accordion-tabs .tab-content {
+        float: left; } }
+
+/* line 4, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-group.scss */
+.button-group input {
+  display: none; }
+/* line 8, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-group.scss */
+.button-group label {
+  font-weight: normal; }
+  @media screen and (min-width: 50em) {
+    /* line 8, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-group.scss */
+    .button-group label {
+      float: left;
+      padding: 0 0.5em; } }
+/* line 17, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-group.scss */
+.button-group .button-group-item {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%; }
+  @media screen and (min-width: 50em) {
+    /* line 17, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-group.scss */
+    .button-group .button-group-item {
+      width: auto; } }
+/* line 27, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-group.scss */
+.button-group input:checked + .button-group-item {
+  color: #ff0000; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-icon.scss */
+.button-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  /* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_button-icon.scss */
+  .button-icon img {
+    margin-right: 1em; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_cards.scss */
+.cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
+  /* line 6, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_cards.scss */
+  .cards .card {
+    -webkit-flex-basis: 20em;
+    -moz-flex-basis: 20em;
+    flex-basis: 20em;
+    -ms-flex-preferred-size: 20em;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    margin: 0 1em; }
+  /* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_cards.scss */
+  .cards .card-image {
+    height: 15em;
+    background: whitesmoke;
+    overflow: hidden; }
+    /* line 17, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_cards.scss */
+    .cards .card-image img {
+      width: 100%; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_comment.scss */
+.comment {
+  display: table;
+  width: 100%; }
+  /* line 5, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_comment.scss */
+  .comment .comment-image,
+  .comment .comment-content {
+    display: table-cell;
+    vertical-align: top; }
+  /* line 11, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_comment.scss */
+  .comment h4 {
+    margin-top: 0; }
+  /* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_comment.scss */
+  .comment .comment-image {
+    padding-right: 1.618em; }
+    /* line 18, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_comment.scss */
+    .comment .comment-image img {
+      height: 3em;
+      max-width: none; }
+    /* line 23, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_comment.scss */
+    .comment-reverse-order .comment .comment-image {
+      padding-left: 10px;
+      padding-right: 0; }
+  /* line 29, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_comment.scss */
+  .comment .comment-content {
+    width: 100%; }
+
+/* line 4, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_dropdown.scss */
+.dropdown .dropdown-container {
+  display: inline-block;
+  position: relative;
+  text-align: center; }
+/* line 10, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_dropdown.scss */
+.dropdown .dropdown-description {
+  float: left;
+  padding-right: 1em; }
+/* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_dropdown.scss */
+.dropdown .dropdown-button {
+  cursor: pointer;
+  float: right;
+  position: relative; }
+/* line 21, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_dropdown.scss */
+.dropdown .dropdown-button:after {
+  display: block;
+  position: absolute; }
+/* line 26, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_dropdown.scss */
+.dropdown .dropdown-menu {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  display: none;
+  overflow: show;
+  position: absolute;
+  text-align: left;
+  top: 50px;
+  width: 228px;
+  z-index: 99999; }
+/* line 38, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_dropdown.scss */
+.dropdown .show-menu {
+  display: block; }
+
+/* line 2, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_expander.scss */
+.expander .expander-trigger {
+  display: block; }
+  /* line 5, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_expander.scss */
+  .expander .expander-trigger:before {
+    content: "\25BC";
+    margin-right: 0.5em; }
+/* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_expander.scss */
+.expander .expander-hidden:before {
+  content: "\25BA"; }
+/* line 17, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_expander.scss */
+.expander .expander-hidden + .expander-content {
+  display: none; }
+
+/* line 31, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_footer.scss */
+.footer .footer-logo {
+  margin-bottom: 1em;
+  margin-right: 1em; }
+  @media screen and (min-width: 50em) {
+    /* line 31, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_footer.scss */
+    .footer .footer-logo {
+      float: left;
+      margin-bottom: 0; } }
+  /* line 40, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_footer.scss */
+  .footer .footer-logo img {
+    height: 2.2em; }
+/* line 45, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_footer.scss */
+.footer ul {
+  margin: 0;
+  padding-left: 0; }
+  @media screen and (min-width: 50em) {
+    /* line 45, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_footer.scss */
+    .footer ul {
+      float: left;
+      padding-top: 0.3em; } }
+  /* line 54, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_footer.scss */
+  .footer ul li {
+    line-height: 1.5em;
+    padding-right: 1em; }
+    @media screen and (min-width: 50em) {
+      /* line 54, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_footer.scss */
+      .footer ul li {
+        display: inline;
+        text-align: left; } }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hero.scss */
+.hero {
+  align-items: center;
+  background: url("../images/background-image.png");
+  background-position: right;
+  background-size: none;
+  display: flex;
+  justify-content: center;
+  min-height: 25em;
+  padding: 2em; }
+  @media screen and (min-width: 50em) {
+    /* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hero.scss */
+    .hero {
+      background-size: cover;
+      background-position: left;
+      justify-content: flex-end; } }
+  /* line 18, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hero.scss */
+  .hero .hero-content {
+    max-width: 20em;
+    text-align: center; }
+    @media screen and (min-width: 50em) {
+      /* line 18, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hero.scss */
+      .hero .hero-content {
+        text-align: left; } }
+  /* line 27, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hero.scss */
+  .hero .hero-logo {
+    margin: auto; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+.hover-menu {
+  overflow: visible;
+  padding-right: 0; }
+  @media screen and (min-width: 50em) {
+    /* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+    .hover-menu {
+      position: relative; } }
+  /* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+  .hover-menu .hover-menu-item {
+    left: 0;
+    position: relative; }
+    /* line 16, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+    .hover-menu .hover-menu-item::after {
+      content: "›";
+      padding-left: 0.5em; }
+  /* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+  .hover-menu .submenu {
+    display: none;
+    margin: 0;
+    padding-left: 0; }
+    @media screen and (min-width: 50em) {
+      /* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+      .hover-menu .submenu {
+        left: 0;
+        position: absolute; } }
+  /* line 33, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+  .hover-menu .submenu li {
+    display: block;
+    padding-right: 0; }
+  /* line 38, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+  .hover-menu .submenu li a {
+    display: inline-block;
+    text-align: right;
+    width: 100%; }
+    @media screen and (min-width: 50em) {
+      /* line 38, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+      .hover-menu .submenu li a {
+        text-align: left;
+        width: 12em; } }
+  @media screen and (min-width: 50em) {
+    /* line 49, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+    .hover-menu .submenu .submenu {
+      left: 12em;
+      top: 0; } }
+  /* line 56, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_hover-menu.scss */
+  .hover-menu:focus > .submenu, .hover-menu:hover > .submenu {
+    display: block; }
+
+/* line 2, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login.scss */
+.login .login-logo {
+  display: block;
+  margin: auto;
+  height: 3em; }
+/* line 8, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login.scss */
+.login label {
+  float: left; }
+/* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login.scss */
+.login input[type="text"] {
+  width: 100%; }
+/* line 16, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login.scss */
+.login .forgot-password {
+  float: right; }
+/* line 20, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login.scss */
+.login .login-button {
+  float: left; }
+/* line 24, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login.scss */
+.login .remember-me {
+  float: right; }
+/* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login.scss */
+.login input[type="checkbox"] {
+  display: inline; }
+
+/* line 2, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login-stacked.scss */
+.login-stacked .login-logo {
+  display: block;
+  margin: 0 auto 2em;
+  height: 3em; }
+/* line 8, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login-stacked.scss */
+.login-stacked label {
+  float: left; }
+/* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login-stacked.scss */
+.login-stacked input[type="text"] {
+  width: 100%; }
+/* line 16, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login-stacked.scss */
+.login-stacked .forgot-password {
+  float: right; }
+/* line 20, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login-stacked.scss */
+.login-stacked .login-button {
+  width: 100%; }
+/* line 24, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login-stacked.scss */
+.login-stacked .remember-me {
+  float: left; }
+/* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_login-stacked.scss */
+.login-stacked input[type="checkbox"] {
+  display: inline; }
+
+/* line 5, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal label {
+  cursor: pointer;
+  font-weight: normal;
+  margin-bottom: 0; }
+/* line 11, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal .modal-state {
+  display: none; }
+/* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal .modal-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  visibility: hidden;
+  z-index: 99999; }
+  @media screen and (min-width: 50em) {
+    /* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+    .modal .modal-fade-screen {
+      padding-top: 10em; } }
+/* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal .modal-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer; }
+/* line 33, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal .modal-close {
+  cursor: pointer; }
+/* line 37, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal .modal-inner {
+  background-color: #fff;
+  margin: auto;
+  max-height: 95%;
+  overflow: auto;
+  position: relative;
+  top: 0.5em;
+  transition: opacity 0.25s ease;
+  width: 95%; }
+  @media screen and (min-width: 30em) {
+    /* line 37, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+    .modal .modal-inner {
+      max-height: 70%;
+      width: 60%; } }
+  @media screen and (min-width: 50em) {
+    /* line 37, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+    .modal .modal-inner {
+      width: 50%; } }
+/* line 57, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal .modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible; }
+
+/* line 63, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal-open {
+  overflow: hidden; }
+
+/* line 67, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_modal.scss */
+.modal-closed {
+  overflow: auto; }
+
+/* line 6, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+.navigation .navigation-menu-button {
+  display: block;
+  float: right;
+  margin: 0;
+  padding-top: 0.5em; }
+  @media screen and (min-width: 30em) {
+    /* line 6, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+    .navigation .navigation-menu-button {
+      display: none; } }
+/* line 18, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+.navigation .navigation-wrapper {
+  position: relative; }
+  /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  .navigation .navigation-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+/* line 23, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+.navigation .logo {
+  float: left; }
+  @media screen and (min-width: 30em) {
+    /* line 23, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+    .navigation .logo {
+      float: none;
+      text-align: center;
+      display: block; } }
+  @media screen and (min-width: 50em) {
+    /* line 23, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+    .navigation .logo {
+      float: left; } }
+  /* line 36, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+  .navigation .logo img {
+    max-height: 2em;
+    padding-right: 1em; }
+/* line 42, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+.navigation nav {
+  float: none; }
+  @media screen and (min-width: 30em) {
+    /* line 42, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+    .navigation nav {
+      float: left;
+      text-align: center;
+      line-height: 1.5em;
+      padding-top: 0.3em; } }
+/* line 53, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+.navigation ul.navigation-menu {
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%; }
+  @media screen and (min-width: 30em) {
+    /* line 53, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+    .navigation ul.navigation-menu {
+      display: block;
+      margin: 0;
+      padding: 0; } }
+  /* line 67, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+  .navigation ul.navigation-menu.show {
+    display: block; }
+/* line 73, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+.navigation ul li.nav-link {
+  display: block;
+  text-align: right;
+  width: 100%; }
+  @media screen and (min-width: 30em) {
+    /* line 73, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+    .navigation ul li.nav-link {
+      background: transparent;
+      display: inline;
+      text-decoration: none;
+      width: auto; } }
+/* line 86, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+.navigation li.nav-link a {
+  display: inline-block; }
+  @media screen and (min-width: 50em) {
+    /* line 86, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation.scss */
+    .navigation li.nav-link a {
+      padding-right: 1em; } }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+.navigation-centered {
+  width: 100%; }
+  /* line 9, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+  .navigation-centered .mobile-logo {
+    display: inline;
+    float: left; }
+    @media screen and (min-width: 50em) {
+      /* line 9, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+      .navigation-centered .mobile-logo {
+        display: none; } }
+    /* line 17, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+    .navigation-centered .mobile-logo img {
+      max-height: 2em; }
+  /* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+  .navigation-centered .navigation-centered-mobile-menu {
+    float: right;
+    padding-top: 0.5em; }
+    @media screen and (min-width: 50em) {
+      /* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+      .navigation-centered .navigation-centered-mobile-menu {
+        display: none; } }
+  /* line 32, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+  .navigation-centered .navigation-centered-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+    /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+    .navigation-centered .navigation-centered-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+    .navigation-centered .navigation-centered-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+  /* line 38, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+  .navigation-centered ul.navigation-centered-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%; }
+    /* line 46, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+    .navigation-centered ul.navigation-centered-menu.show {
+      display: block; }
+    @media screen and (min-width: 50em) {
+      /* line 38, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+      .navigation-centered ul.navigation-centered-menu {
+        display: block;
+        text-align: center; } }
+  /* line 57, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+  .navigation-centered ul li.nav-link {
+    display: block;
+    text-align: right;
+    width: 100%; }
+    /* line 62, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+    .navigation-centered ul li.nav-link a {
+      display: inline-block; }
+    /* line 66, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+    .navigation-centered ul li.nav-link:last-child a {
+      padding-right: 0; }
+    @media screen and (min-width: 50em) {
+      /* line 57, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+      .navigation-centered ul li.nav-link {
+        display: inline; }
+        /* line 73, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+        .navigation-centered ul li.nav-link a {
+          padding-right: 1em; } }
+  /* line 80, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+  .navigation-centered li.logo.nav-link {
+    display: none;
+    line-height: 0; }
+    @media screen and (min-width: 50em) {
+      /* line 80, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+      .navigation-centered li.logo.nav-link {
+        display: inline; } }
+  /* line 89, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_navigation-centered.scss */
+  .navigation-centered .logo img {
+    margin-bottom: -0.66667em;
+    max-height: 2em; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_search-bar.scss */
+.search-bar {
+  width: 100%; }
+  /* line 4, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_search-bar.scss */
+  .search-bar form {
+    position: relative; }
+  /* line 8, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_search-bar.scss */
+  .search-bar input {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    position: relative;
+    width: 100%; }
+  /* line 16, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_search-bar.scss */
+  .search-bar button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px 10px; }
+  /* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_search-bar.scss */
+  .search-bar img {
+    height: 12px;
+    opacity: 0.7; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_switch.scss */
+.switch {
+  cursor: pointer;
+  display: inline-block;
+  position: relative; }
+  /* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_switch.scss */
+  .switch input {
+    display: none; }
+    /* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_switch.scss */
+    .switch input + .checkbox {
+      height: 32px;
+      width: 52px;
+      border: 1px solid #000;
+      cursor: pointer;
+      position: relative;
+      width: 52px;
+      z-index: 0; }
+      /* line 23, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_switch.scss */
+      .switch input + .checkbox::before {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        left: 2px;
+        content: "";
+        width: 48px;
+        z-index: 1; }
+      /* line 30, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_switch.scss */
+      .switch input + .checkbox::after {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        bottom: 0;
+        left: 1px;
+        height: 28px;
+        width: 28px;
+        background-color: #000;
+        content: "";
+        transition: all 0.3s ease;
+        z-index: 2; }
+    /* line 41, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_switch.scss */
+    .switch input:checked + .checkbox {
+      background-color: #aaa; }
+      /* line 44, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_switch.scss */
+      .switch input:checked + .checkbox::after {
+        left: 21px; }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_tooltip.scss */
+.tooltip-item {
+  display: inline-block;
+  position: relative;
+  text-align: center; }
+  /* line 6, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_tooltip.scss */
+  .tooltip-item:focus .tooltip, .tooltip-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible; }
+  /* line 12, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_tooltip.scss */
+  .tooltip-item .tooltip {
+    position: absolute;
+    right: 0;
+    bottom: 3em;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: #f5f5f5;
+    margin-left: -2em;
+    opacity: 0;
+    text-align: center;
+    visibility: hidden;
+    width: 12em;
+    z-index: 10; }
+  /* line 24, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_tooltip.scss */
+  .tooltip-item .tooltip::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -1em;
+    color: #f5f5f5;
+    content: "▼";
+    font-size: 1.4em;
+    text-align: center; }
+  /* line 33, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_tooltip.scss */
+  .tooltip-item .tooltip-content {
+    margin-bottom: 0; }
+
+/* line 9, /Users/calleerlandsson/.gem/ruby/2.2.0/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+.vertical-tabs-container::after {
+  clear: both;
+  content: "";
+  display: table; }
+/* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tabs {
+  display: none; }
+  @media screen and (min-width: 30em) {
+    /* line 7, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+    .vertical-tabs-container .vertical-tabs {
+      display: inline;
+      float: left;
+      height: 20em;
+      width: 20%; } }
+@media screen and (min-width: 30em) {
+  /* line 18, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tab {
+    display: block; }
+    /* line 22, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+    .vertical-tabs-container .vertical-tab.is-active {
+      color: #ff0000; } }
+/* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-content-container {
+  display: block; }
+  @media screen and (min-width: 30em) {
+    /* line 28, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+    .vertical-tabs-container .vertical-tab-content-container {
+      height: 20em;
+      width: 80%;
+      display: inline-block; } }
+@media screen and (min-width: 30em) {
+  /* line 37, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tab-content {
+    display: none; } }
+/* line 43, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-accordion-heading {
+  cursor: pointer;
+  display: block; }
+  @media screen and (min-width: 30em) {
+    /* line 43, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_vertical-tabs.scss */
+    .vertical-tabs-container .vertical-tab-accordion-heading {
+      display: none; } }
+
+@media screen and (min-width: 50em) {
+  /* line 4, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_scroll-on-page.scss */
+  .scroll-on-page aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    /* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .scroll-on-page aside:last-child {
+      margin-right: 0; } }
+/* line 10, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_scroll-on-page.scss */
+.scroll-on-page .scroll-on-page-link {
+  display: block;
+  outline: none; }
+@media screen and (min-width: 50em) {
+  /* line 15, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_scroll-on-page.scss */
+  .scroll-on-page article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    /* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .scroll-on-page article:last-child {
+      margin-right: 0; } }
+
+/* line 1, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_sliding-panel.scss */
+.sliding-panel-content {
+  position: fixed;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  -webkit-transform: translateX(-220px);
+  -moz-transform: translateX(-220px);
+  -ms-transform: translateX(-220px);
+  -o-transform: translateX(-220px);
+  transform: translateX(-220px);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: 999999; }
+  /* line 13, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_sliding-panel.scss */
+  .sliding-panel-content.is-visible {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+
+/* line 18, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_sliding-panel.scss */
+.sliding-panel-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999; }
+  /* line 26, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_sliding-panel.scss */
+  .sliding-panel-fade-screen.is-visible {
+    opacity: 0.4;
+    visibility: visible; }
+
+/* line 32, /Users/calleerlandsson/Projects/empties/source/stylesheets/refills/_sliding-panel.scss */
+.sliding-panel-close {
+  cursor: pointer; }
