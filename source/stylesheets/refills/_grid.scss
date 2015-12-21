@@ -1,0 +1,23 @@
+.grid {
+  $grid-gutter: 0.1rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 - $grid-gutter;
+
+  .grid-box-wrap {
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 200px;
+    overflow: hidden;
+    padding: 0 $grid-gutter ($grid-gutter * 2);
+  }
+
+  .grid-box {
+    background: whitesmoke;
+    text-align: center;
+  }
+}
+
+// Based on code by http://codepen.io/heydon/
