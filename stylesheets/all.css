@@ -880,13 +880,12 @@ section.inner-content {
   margin: -0.1rem; }
   /* line 8, /Users/magnus/Documents/Empties/source/stylesheets/refills/_grid.scss */
   .grid .grid-box-wrap {
-    flex-basis: 25%;
+    flex-basis: 20rem;
     flex-grow: 1;
     flex-shrink: 0;
-    min-width: 200px;
     overflow: hidden;
     padding: 0 0.1rem 0.2rem; }
-  /* line 17, /Users/magnus/Documents/Empties/source/stylesheets/refills/_grid.scss */
+  /* line 16, /Users/magnus/Documents/Empties/source/stylesheets/refills/_grid.scss */
   .grid .grid-box {
     background: whitesmoke;
     text-align: center; }
