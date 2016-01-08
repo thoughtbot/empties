@@ -463,10 +463,7 @@
     <section id="button-icon" class="refill">
       <div class="refills-wrapper">
         <div class="line-behind-text"><h6>Button with icon</h6></div>
-        <div class="refill-smaller"><button class="button-icon">
-  <img src="https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder_small.png" alt="Logo Image">
-  <span>Button with icon</span>
-</button>
+        <div class="refill-smaller"><button class="button-icon">Button with icon</button>
 </div>
       </div>
       <div class="refill-snippet"><div class="refill-control">
@@ -480,10 +477,7 @@
   <div class="copy-source-container">
       <a href="javascript:void(0)" class="copy-source">Copy HTML</a>
   </div>
-  <pre><code class="language-markup">&lt;button class=&quot;button-icon&quot;&gt;
-  &lt;img src=&quot;https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder_small.png&quot; alt=&quot;Logo Image&quot;&gt;
-  &lt;span&gt;Button with icon&lt;/span&gt;
-&lt;/button&gt;
+  <pre><code class="language-markup">&lt;button class=&quot;button-icon&quot;&gt;Button with icon&lt;/button&gt;
 </code></pre>
 </td>
 
@@ -492,13 +486,20 @@
       <a href="javascript:void(0)" class="copy-source">Copy Scss</a>
   </div>
   <pre><code class="language-scss">.button-icon {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  $icon-size: 1.6em;
+  background-color: whitesmoke;
+  padding: 1em;
   width: 100%;
 
-  img {
+  &amp;:before {
+    @include size($icon-size);
+    background-image: url(https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder_small.png);
+    background-repeat: no-repeat;
+    background-size: $icon-size;
+    content: &quot;&quot;;
+    display: inline-block;
     margin-right: 1em;
+    vertical-align: middle;
   }
 }
 </code></pre>
@@ -1080,6 +1081,86 @@
     }
   }
 }
+</code></pre>
+</td>
+
+
+
+  </tr>
+</table>
+</div>
+    </section>
+
+    <section id="grid" class="refill">
+      <div class="refills-wrapper">
+        <div class="line-behind-text"><h6>Grid</h6></div>
+        <div class="refill-centering"><div class="grid">
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+  <div class="grid-box-wrap"><div class="grid-box">Content</div></div>
+</div>
+</div>
+      </div>
+      <div class="refill-snippet"><div class="refill-control">
+  <a href="#" class="js-show-code">Show Code</a>
+  <a href="#" class="js-hide-code">Hide Code</a>
+</div>
+
+<table class="snippets-table">
+  <tr>
+    <td class="snippet">
+  <div class="copy-source-container">
+      <a href="javascript:void(0)" class="copy-source">Copy HTML</a>
+  </div>
+  <pre><code class="language-markup">&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-box-wrap&quot;&gt;&lt;div class=&quot;grid-box&quot;&gt;Content&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</td>
+
+<td class="snippet">
+  <div class="copy-source-container">
+      <a href="javascript:void(0)" class="copy-source">Copy Scss</a>
+  </div>
+  <pre><code class="language-scss">.grid {
+  $grid-gutter: 0.1rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 - $grid-gutter;
+
+  .grid-box-wrap {
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 200px;
+    overflow: hidden;
+    padding: 0 $grid-gutter ($grid-gutter * 2);
+  }
+
+  .grid-box {
+    background: whitesmoke;
+    text-align: center;
+  }
+}
+
+// Based on code by http://codepen.io/heydon/
 </code></pre>
 </td>
 
