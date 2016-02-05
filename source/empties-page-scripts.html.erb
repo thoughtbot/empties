@@ -57,15 +57,15 @@
 <script>
   $(document).ready(function(){
 
-    $('.js-menu-trigger-refills').on('click touchstart', function(e){
+    $('.js-menu-trigger-empties').on('click touchstart', function(e){
       $('.er_toc').toggleClass('is-visible');
-      $('.js-menu-screen-refills').toggleClass('is-visible');
+      $('.js-menu-screen-empties').toggleClass('is-visible');
       e.preventDefault();
     });
 
-    $('.js-menu-screen-refills').on('click touchstart', function(e){
+    $('.js-menu-screen-empties').on('click touchstart', function(e){
       $('.er_toc').toggleClass('is-visible');
-      $('.js-menu-screen-refills').toggleClass('is-visible');
+      $('.js-menu-screen-empties').toggleClass('is-visible');
       e.preventDefault();
     });
   });

@@ -4,7 +4,7 @@ section.inner-content {
   margin-left: auto;
 }
 
-.refills-menu-anchor {
+.empties-menu-anchor {
   @include position(fixed, 4.5em null null 1em);
   @include size(50px);
   border: 1px solid $empties-anchor-color;
@@ -36,7 +36,7 @@ section.inner-content {
   }
 }
 
-.refills-menu-anchor-moved {
+.empties-menu-anchor-moved {
   top: 1em;
 }
 
@@ -44,7 +44,7 @@ section.inner-content {
   height: 0 !important;
 }
 
-.refills-menu-screen {
+.empties-menu-screen {
   @include position(fixed, 0 0 0 0);
   @include transition;
   background-color: teal;

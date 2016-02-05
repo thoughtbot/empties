@@ -28,7 +28,7 @@ module SnippetHelpers
 
   class ScssSnippet < Snippet
     def path_segments
-      [SOURCE_DIR, "stylesheets", "refills", namespace, "_#{name.dasherize}.scss"]
+      [SOURCE_DIR, "stylesheets", "empties", namespace, "_#{name.dasherize}.scss"]
     end
 
     def language
@@ -38,7 +38,7 @@ module SnippetHelpers
 
   class JavaScriptSnippet < Snippet
     def path_segments
-      [SOURCE_DIR, "javascripts", "refills", namespace, "#{name.underscore}.js"]
+      [SOURCE_DIR, "javascripts", "empties", namespace, "#{name.underscore}.js"]
     end
 
     def language
@@ -51,7 +51,7 @@ module SnippetHelpers
       [
         SOURCE_DIR,
         "javascripts",
-        "refills",
+        "empties",
         "coffeescript",
         namespace,
         "#{name.underscore}.coffee"

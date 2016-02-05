@@ -1,4 +1,4 @@
-footer.refills-footer {
+footer.empties-footer {
   color: silver;
   padding-bottom: 2em;
   padding-top: 1em;
@@ -14,12 +14,12 @@ footer.refills-footer {
     line-height: 1.5em;
     margin: 0 1em;
 
-    @include media($refills-large-screen) {
+    @include media($empties-large-screen) {
       font-size: 1em;
     }
   }
 
-  .refills-footer-logo {
+  .empties-footer-logo {
     margin-bottom: 2em;
   }
 
@@ -33,14 +33,14 @@ footer.refills-footer {
   .footer-links {
     border-top: 2px solid;
     display: inline-block;
-    font-family: $refills-narrow-sans;
+    font-family: $empties-narrow-sans;
     font-size: 0.8em;
     font-weight: 300;
     margin-bottom: 4em;
     padding: 0.6em;
     text-transform: uppercase;
 
-    @include media($refills-large-screen) {
+    @include media($empties-large-screen) {
       font-size: 1em;
       padding: 1em;
     }
@@ -54,7 +54,7 @@ footer.refills-footer {
         text-decoration: none;
 
         &:hover {
-          color: $refills-anchor-color;
+          color: $empties-anchor-color;
         }
       }
     }

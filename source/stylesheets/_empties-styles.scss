@@ -1,0 +1,29 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  background: $empties-body-background-color;
+  min-width: 320px;
+}
+
+@mixin empties-inset {
+  background: darken($empties-hero-background, 2%);
+  border: 1px solid darken($empties-hero-background, 7);
+  box-shadow: $empties-white-shadow;
+  text-shadow: $empties-white-shadow;
+}
+
+.menu-wrapper {
+  @include clearfix;
+}
+
+#example {
+  background: $empties-body-background-color;
+  display: inline-block;
+  padding-top: 1em;
+  position: relative;
+  width: 100%;
+
+  @include media($empties-large-screen) {
+    padding-top: 3em;    
+  }
+}

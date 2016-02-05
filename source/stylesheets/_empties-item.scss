@@ -1,4 +1,4 @@
-section.refill {
+section.empties {
   @include clearfix;
   margin-bottom: 2em;
   padding-bottom: 1em;
@@ -11,18 +11,18 @@ section.refill {
   }
 }
 
-.refills-wrapper {
+.empties-wrapper {
   @include outer-container;
   padding: 1em;
 
   h1.main-header {
-    background-color: $refills-color;
+    background-color: $empties-color;
     display: inline-block;
     padding: 0.5em;
   }
 }
 
-.refill-centering {
+.empties-centering {
   text-align: center;
 
   & > * {
@@ -45,10 +45,10 @@ section.refill {
 }
 
 .line-behind-text h6 {
-  background: $refills-body-background-color;
+  background: $empties-body-background-color;
   color: #808080;
   display: inline-block;
-  font-family: $refills-narrow-sans;
+  font-family: $empties-narrow-sans;
   font-size: 1em;
   font-weight: 500;
   padding: 0 10px;
@@ -57,7 +57,7 @@ section.refill {
   top: 34px;
 }
 
-.refill h6 {
+.empties h6 {
   margin-bottom: 1.5em;
 }
 
@@ -70,7 +70,7 @@ section.refill {
   width: 9em;
 
   &:hover {
-    color: $refills-accent-color;
+    color: $empties-accent-color;
   }
 }
 
@@ -85,7 +85,7 @@ section.refill {
 }
 
 
-.refill-control {
+.empties-control {
   display: block;
   margin-bottom: 2em;
   text-align: center;
@@ -98,7 +98,7 @@ section.refill {
 
 }
 
-.refill-snippet {
+.empties-snippet {
   margin-top: 4.5em;
   padding: 0 1em;
 
@@ -146,18 +146,18 @@ pre[class*="language-"] {
 }
 
 .snippet {
-  @include media($refills-medium-screen) {
+  @include media($empties-medium-screen) {
     margin-bottom: 2em;
   }
 
   .copy-source-container {
     min-height: 3.4em;
 
-    @include media($refills-medium-screen) {
+    @include media($empties-medium-screen) {
       min-height: 2.5em;
     }
 
-    @include media($refills-large-screen) {
+    @include media($empties-large-screen) {
       min-height: 1em;
     }
   }
@@ -209,7 +209,7 @@ pre[class*="language-"] {
   }
 }
 
-.refill-smaller {
+.empties-smaller {
   margin: auto;
   width: 70%;
 }

@@ -2,8 +2,8 @@ require 'middleman-gh-pages'
 
 desc "Compile javascript -> coffeescript"
 task :coffee do
-  destination = "source/javascripts/refills/coffeescript"
-  Dir["source/javascripts/refills/**/*.js"].each do |source|
+  destination = "source/javascripts/empties/coffeescript"
+  Dir["source/javascripts/empties/**/*.js"].each do |source|
     filename = File.basename(source.gsub(/.js/, ".coffee"))
 
     `$(npm bin)/js2coffee #{source} > #{destination}/#{filename}`

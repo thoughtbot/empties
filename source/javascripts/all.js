@@ -2,9 +2,9 @@
 //= require jquery.glide
 //= require menuAnchorAnimation
 //= require_directory ./vendor
-//= require_directory ./refills
+//= require_directory ./empties
 
 $(document).ready(function() {
   $('#example').erToc({'goTopNode':'#example', 'startLevel': 'h2', 'numberedSuffix':'. '});
-  $('.refills-menu-anchor').fixedsticky();
+  $('.empties-menu-anchor').fixedsticky();
 });

@@ -1,0 +1,20 @@
+$empties-serif: "Lusitana", $georgia;
+$empties-narrow-sans: "Oswald", sans-serif;
+$empties-second-serif: $georgia;
+
+$empties-nav-height: 60px;
+
+$empties-body-background-color: #fff;
+$empties-color: lighten(desaturate(teal, 60%), 40%);
+$empties-accent-color: #477dca;
+$empties-logo-color: #93e9be;
+$empties-anchor-color: #f55481;
+$empties-hero-background: #F8F8F8;
+$empties-highlight-color: #bbb295;
+$empties-white-shadow: 0 1px 1px transparentize(#fff, 0.6);
+$empties-anchor-color: #776FAA;
+$empties-hover-color: darken($empties-anchor-color, 15%);
+$empties-header-copy-color: #999;
+
+$empties-medium-screen: em(640);
+$empties-large-screen: em(860);
