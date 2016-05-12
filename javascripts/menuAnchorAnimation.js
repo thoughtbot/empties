@@ -1,11 +1,11 @@
 (function() {
-  var refillsMenuAnchor = $('.refills-menu-anchor');
+  var emptiesMenuAnchor = $('.empties-menu-anchor');
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 50) {
-      refillsMenuAnchor.addClass('refills-menu-anchor-moved');
+      emptiesMenuAnchor.addClass('empties-menu-anchor-moved');
     } else if ($(this).scrollTop() <= 50) {
-      refillsMenuAnchor.removeClass('refills-menu-anchor-moved');
+      emptiesMenuAnchor.removeClass('empties-menu-anchor-moved');
     }
   });
 })();
