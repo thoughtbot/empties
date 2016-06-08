@@ -896,7 +896,7 @@ section.inner-content {
 /* line 1, /Users/magnus/Documents/Empties/source/stylesheets/empties/_hero.scss */
 .hero {
   align-items: center;
-  background: url("../images/background-image.png");
+  background: url("https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/background-image.png");
   background-position: right;
   background-size: none;
   display: flex;
