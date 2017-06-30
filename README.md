@@ -2,6 +2,8 @@
 
 ## Unstyled components and patterns built with Bourbon and Neat
 
+**Note:** Empties is no longer being actively maintained.
+
 - **[Examples & Code Snippets](http://empties.bourbon.io)**
 - **[Issues & Bugs](https://github.com/thoughtbot/empties/issues)**
 
